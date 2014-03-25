@@ -1,0 +1,68 @@
+html{
+	height: 100%;
+}
+body{
+	background-image: url('../img/Menu Principal Preview solo fondo.jpg');
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+	font-size: 16px;
+	height: 98%;
+	margin: 0;
+	text-align: center;
+}
+#Contenido{
+	background: white;
+	color: white;
+	height: 98%;
+	margin: 0 1% 0 1%;
+	min-width: 314px;
+	min-height: 470px;
+}
+#Contenido header {
+	margin: 10px 10px 3px 10px;
+	padding: 0;
+}
+#Contenido footer{
+	color: gray;
+	font-size: 12px;
+	margin: 0;
+}
+#Contenido header figure{	
+	margin: 0;
+	padding: 0;
+}
+#Contenido header h1 {
+	padding: 0;
+	margin: 0;
+}
+#Contenido header section {
+	background: #2E3092;
+	margin: 0;
+	padding: 5px;
+}
+#Contenido td{
+	background: #0095D9;
+	border: 1px solid white;
+}
+#Contenido td a{
+	color: white;
+	text-decoration: none;
+}
+#Contenido #Item_pedidos{
+	background: white;
+}
+#Contenido #Item_pedidos a{
+	color: gray;
+}
+#Contenido #menu{
+	height: 80%;
+	margin: 3px 10px 2px 10px;
+}/*
+td{
+	background: #0095D9;
+	
+}
+td #Item_pedidos{
+	background: white;
+	border: 1px solid white;
+}
