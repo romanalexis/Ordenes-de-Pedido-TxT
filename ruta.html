@@ -1,12 +1,41 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Ruta</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<script type="text/javascript" src="cordova-2.4.0.js"></script>
 </head>
 <body>
-	<header>
-		<h1>Ruta</h1>
-	</header>
+	<section>
+		<header>
+			<figure>
+				<img src="img/Iconos Blancos/Ruta Blanco.png" alt="ruta">
+			</figure>
+			<h1>Ruta del día (<span id="Dia_ruta"></span>)</h1>
+		</header>
+		<nav>
+			<div class="back_ruta"> < </div>
+			<div>Ver Mapa</div>
+			<div class="forward_ruta"> > </div>
+		</nav>
+		<div class="buscar"></div>
+		<section id="Lista_ruta">
+			<ul>
+				<li>
+					<a href="#">
+						<figure id="imagen_ruta">
+							<img src="" alt="">
+						</figure>
+						<h2 id="Direccion_ruta">Calle 56 32 54</h2>
+						<p id="RazonSocial_ruta">Supermercados MercaUno</p>
+						<p id="Barrio_ruta">Cabecera</p> <span id="tel_ruta">6571234</span>
+					</a>
+				</li>
+			</ul>
+		</section>
+
+	</section>
 </body>
 </html>
