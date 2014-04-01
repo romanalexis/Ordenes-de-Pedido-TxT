@@ -8,32 +8,53 @@
 	<script type="text/javascript" src="cordova-2.4.0.js"></script>
 </head>
 <body>
-	<section>
+	<section id="SectionRuta">
 		<header>
-			<figure>
+			<figure id="logo_ruta">
 				<img src="img/Iconos Blancos/Ruta Blanco.png" alt="ruta">
 			</figure>
-			<h1>Ruta del día (<span id="Dia_ruta"></span>)</h1>
+			<h1>Ruta del día (<span id="Dia_ruta">Lunes</span>)</h1>
 		</header>
 		<nav>
-			<div class="back_ruta"> < </div>
-			<div>Ver Mapa</div>
-			<div class="forward_ruta"> > </div>
-		</nav>
-		<div class="buscar"></div>
-		<section id="Lista_ruta">
 			<ul>
-				<li>
-					<a href="#">
-						<figure id="imagen_ruta">
-							<img src="" alt="">
-						</figure>
-						<h2 id="Direccion_ruta">Calle 56 32 54</h2>
-						<p id="RazonSocial_ruta">Supermercados MercaUno</p>
-						<p id="Barrio_ruta">Cabecera</p> <span id="tel_ruta">6571234</span>
-					</a>
+				<li id="Atras_ruta">
+					<a href="#"><</a>
+				</li>
+				<li id="Mapa_ruta">
+					<a href="#">Ver Mapa</a>
+				</li>
+				<li id="Next_ruta">
+					<a href="#">></a>
 				</li>
 			</ul>
+		</nav>
+		<div class="buscar">
+			<input type="text">
+			<figure>
+				<img src="img/Iconos Blancos/Consultas Blanco.png">
+			</figure>	
+		</div>
+		<section id="Lista_ruta">
+			<article>
+				<figure>
+					<img src="img/clientes/Giam_Chou-Zen.jpg">
+				</figure>
+				<a href="#">
+					<h2 id="Direccion_ruta">Calle 56 32 64</h2>
+					<div class="Razonsocial_ruta">
+						<p>Supermercados MercaUno</p>
+					</div>
+					<div class="Barrio_ruta">
+						<p>Cabecera</p>
+					</div>
+					<div class="Telefono_ruta">
+						<p>6571234</p>
+					</div>
+					<div class="Turno_ruta">
+						<p>001</p>
+					</div>
+				</a>
+			</article>
 		</section>
 
 	</section>
