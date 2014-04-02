@@ -18,7 +18,7 @@ body{
 	margin: 0;
 	
 }
-figure{
+figure {
 	margin: 0;
 }
 figure img{
@@ -36,8 +36,7 @@ header{
 	width: 96%;
 }
 header figure img{
-	height: 130px;
-	
+	height: 100px;
 	}
 header h1{
 	background: #2E3092;
@@ -47,9 +46,8 @@ header h1{
 }
 section{
 	background: white;
-	border: 1px solid red;
 	color: white;
-	margin: 2% auto auto auto;
+	margin: auto auto auto auto;
 	max-width: 500px;
 }
 section #dashboard{
@@ -85,18 +83,25 @@ section #dashboard table tr td figure img{
 	padding: 0;
 	width: 40%;
 }
+
+@media screen and (min-width: 320px){
+	section #dashboard table{
+    	height: 310px;
+	}
+}
+
 @media screen and (min-width: 480px) {
 	body{
 		font-size: 1.2em;
 	}
     section {
-    	margin: 10% auto;
+    	margin: 15% auto;
 	}
     section #dashboard table{
     	height: 600px;
 	}
 	header figure img{
-	height: 150px;
+	height: 190px;
 	}
 }
 @media screen and (min-width: 700px) {
@@ -106,8 +111,12 @@ section #dashboard table tr td figure img{
     section {
     	margin: 25% auto;
 	}
+	header figure{
+		margin: 0;
+	}
 	header figure img{
-	height: 180px;
-	max-width: 480px;
+		margin: 0;
+		height: 198px;
+		max-width: 480px;
 	}
 }
