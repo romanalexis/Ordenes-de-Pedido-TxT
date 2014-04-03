@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Ruta</title>
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/estilos.css">
 	<script type="text/javascript" src="cordova-2.4.0.js"></script>
 </head>
@@ -16,17 +17,25 @@
 			<h1>Ruta del día (<span id="Dia_ruta">Lunes</span>)</h1>
 		</header>
 		<nav>
-			<ul>
-				<li id="Atras_ruta">
-					<a href="#"><</a>
-				</li>
-				<li id="Mapa_ruta">
-					<a href="#">Ver Mapa</a>
-				</li>
-				<li id="Next_ruta">
-					<a href="#">></a>
-				</li>
-			</ul>
+			<div class="flechas_izq">
+				<a href="#" id="Next_ruta">
+					<figure>
+						<img src="img/Iconos Blancos/izquierda.png" alt="">
+					</figure>
+				</a>
+			</div>
+			<div class="Link_Mapa">
+				<a href="#" id="Mapa_ruta">
+					Ver Mapa
+				</a>
+			</div>
+			<div class="flechas_der">
+				<a href="#" id="Next_ruta">
+				<figure>
+					<img src="img/Iconos Blancos/derecha.png" alt="">
+				</figure>
+			</a>
+			</div>
 		</nav>
 		<div class="buscar">
 			<input type="text">

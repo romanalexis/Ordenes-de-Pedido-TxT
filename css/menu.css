@@ -40,6 +40,7 @@ header figure img{
 	}
 header h1{
 	background: #2E3092;
+	font-size: 1.2em;
 	margin: 0 2px 0 2px;
 	padding: 0.5em;
 	text-align: center;
@@ -55,13 +56,14 @@ section #dashboard{
 	text-align: center;
 }
 section #dashboard table{
-
+	border: 2px solid white;
 	margin: 0 2%;
 	min-height: 290px;
 	width: 96%;
 }
 section #dashboard table tr td{
 	background: #0095D9;
+	border: 3px solid white;
 	width: 33.3%;
 }
 section #dashboard table tr #Item_pedidos{
@@ -92,7 +94,7 @@ section #dashboard table tr td figure img{
 
 @media screen and (min-width: 480px) {
 	body{
-		font-size: 1.2em;
+		font-size: 1.5em;
 	}
     section {
     	margin: 15% auto;
@@ -106,7 +108,7 @@ section #dashboard table tr td figure img{
 }
 @media screen and (min-width: 700px) {
 	body{
-		font-size: 1.5em;
+		font-size: 1.3em;
 	}
     section {
     	margin: 25% auto;

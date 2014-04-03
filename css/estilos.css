@@ -8,115 +8,65 @@
     font-weight: normal;
     font-style: normal;
 }
-
 body{
-	background-image: url('../img/Menu Principal Preview solo fondo.jpg');
-	background-repeat:no-repeat;
-	background-size: 100% 100%;
+    background: gray;
 	font-family: "regencielight";
 	font-size: 16px;
     margin: 0;
+}
+header{
+    background: #0095D9;
+    border-bottom: 1px solid white;
+    overflow: hidden;
+}
+header figure{
+    border-right: 1px solid white;
+    float: left;
+    margin: 0 1em 0 0;
+    padding: 0.3em 10%;
+}
+header h1{
+    font-size: 1.2em;
+    margin: 0.8em 0;
+}
+header #logo_ruta img{
+    width: 40px;
+}
+nav{
+    background: gray;
+    height: 54px;
+    overflow: hidden;
+}
+nav .flechas_izq{
+    border-right: 1px solid white;
+    margin: 0;
+    padding: 0 10%;
+}
+nav .flechas_der{
+    border-left: 1px solid white;
+    margin: 0;
+    padding: 0 10%;
+    right: 0
+}
+nav .Link_Mapa{
+}
+nav div{
+    display: inline-block;
+    padding: 0.1em 0;
+}
+nav div a{
+    color: white;
+    text-decoration: none;
+}
+nav div a figure{
+    margin: 0;
+}
+nav div a figure img{
+    width: 40px;
 }
 section{
     background: white;
     color: white;
     margin: 2% auto auto auto;
     max-width: 500px;
-}
-header{
-    background: #0095D9;
-    padding: 0.5em 0.5em 0.4em 0.7em;
-}
-header h1{
-    font-size: 1.2em;
-    margin: 0;
-    padding: 0.6em;
-}
-header figure{
-    float: left;
-    margin: 0 0.5em 0 0.5em;
-    padding-right: 0.5em;
-}
-nav{
-    background: gray;
-    border: 1px solid white;
-    position: relative;
-    text-align: center;
-}
-nav ul #Atras_ruta{
-    width: 50px; 
-    float: left;
-}
-nav ul #Next_ruta{
-    width: 50px; 
-    float: right;
-}
-nav ul #Mapa_ruta{
-    width: 47%; 
-}
-nav ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-nav ul li{
-    display: inline-block;
-}
-nav ul li a{
-    color: white;
-    display: block;
-    padding: 0.5em 0;
-    text-decoration: none;
-}
- #Lista_ruta{
-
-    margin: 0;
-
-}
-#Lista_ruta article a{
-    margin: 0 0 10px 0;
-    text-decoration: none;
-}
-#Lista_ruta article a div{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
-
-#Lista_ruta article a div p{
-    color: gray;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
-#Lista_ruta article a h2{
-    color: #0095D9;
-    font-size: 1em;
-    margin: 0;
-    text-decoration: none;
-}
-#Lista_ruta article{
-    border-bottom: 3px solid gray;
-    margin: 0;
-}
-#Lista_ruta article figure{
-    float: left;
-    margin: 0 1em 0 0;
-}
-#Lista_ruta article figure img{
-    max-width: 60px;
-}
-.buscar{
-    background: lightgray;
-    text-align: center;
-}
-.buscar input{
-    border: 0;
-    height: 25px;
-    margin: 0.6em;
-    width: 70%;
-}
-.buscar figure{
-    float: right;
-    margin: 0.1em 1em 0 0;
 }
