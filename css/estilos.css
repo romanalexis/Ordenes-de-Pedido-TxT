@@ -35,33 +35,41 @@ header #logo_ruta img{
 nav{
     background: gray;
     height: 54px;
+    margin: 0 0 10px 0;
     overflow: hidden;
+    text-align: center;
 }
 nav .flechas_izq{
     border-right: 1px solid white;
+    float: left;
     margin: 0;
     padding: 0 10%;
 }
 nav .flechas_der{
     border-left: 1px solid white;
+    border-right: 1px solid white;
+    float: right;
     margin: 0;
     padding: 0 10%;
-    right: 0
 }
 nav .Link_Mapa{
+    
 }
 nav div{
     display: inline-block;
-    padding: 0.1em 0;
+    height: 100%;
+    padding: 0;
 }
 nav div a{
     color: white;
     text-decoration: none;
 }
 nav div a figure{
+    height: 54px;
     margin: 0;
 }
 nav div a figure img{
+    padding: 0.45em 0;
     width: 40px;
 }
 section{
@@ -69,4 +77,10 @@ section{
     color: white;
     margin: 2% auto auto auto;
     max-width: 500px;
+}
+#Lista_ruta{
+    margin: 0;
+}
+.ui-listview {
+    margin: 0.8em 0;
 }
