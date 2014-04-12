@@ -8,6 +8,9 @@
     font-weight: normal;
     font-style: normal;
 }
+*{
+    border-radius: 0;
+}
 body{
     background: gray;
 	font-family: "regencielight";
@@ -23,10 +26,11 @@ header figure{
     border-right: 1px solid white;
     float: left;
     margin: 0 1em 0 0;
-    padding: 0.3em 10%;
+    padding: 0.72em 8%;
 }
 header h1{
     font-size: 1.2em;
+    font-weight: normal;
     margin: 0.8em 0;
 }
 header #logo_ruta img{
@@ -35,7 +39,7 @@ header #logo_ruta img{
 nav{
     background: gray;
     height: 54px;
-    margin: 0 0 10px 0;
+    margin: 0 0 1em 0;
     overflow: hidden;
     text-align: center;
 }
@@ -43,16 +47,16 @@ nav .flechas_izq{
     border-right: 1px solid white;
     float: left;
     margin: 0;
-    padding: 0 10%;
+    padding: 0 8%;
 }
 nav .flechas_der{
     border-left: 1px solid white;
     border-right: 1px solid white;
     float: right;
     margin: 0;
-    padding: 0 10%;
+    padding: 0 8%;
 }
-nav .Link_Mapa{
+nav .filtros_icon_1{
     
 }
 nav div{
@@ -81,6 +85,22 @@ section{
 #Lista_ruta{
     margin: 0;
 }
+#Lista_ruta ul li a h2{
+    color: #0095D9;
+}
+#Lista_ruta ul li a p{
+    color: gray;
+}
+#Lista_ruta ul li a span{
+    color: #0095D9;
+}
 .ui-listview {
     margin: 0.8em 0;
+}
+.ui-icon, .ui-icon-searchfield:after{
+    display: none;
+}
+.ui-li-heading {
+
+margin: 0.2em 0 0.6em 0;
 }
