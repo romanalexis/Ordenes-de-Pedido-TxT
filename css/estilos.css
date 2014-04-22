@@ -20,6 +20,7 @@ body{
 header{
     background: #0095D9;
     border-bottom: 1px solid white;
+    height: 53px;
     overflow: hidden;
 }
 header figure{
@@ -31,7 +32,7 @@ header figure{
 header h1{
     font-size: 1.2em;
     font-weight: normal;
-    margin: 0.8em 0;
+    margin: 0.7em 0;
 }
 header #logo_ruta img{
     width: 40px;
@@ -57,7 +58,8 @@ nav .flechas_der{
     padding: 0 8%;
 }
 nav .filtros_icon_1{
-    
+    border-right: 1px solid white;
+    padding: 0 8%;
 }
 nav div{
     display: inline-block;
@@ -94,6 +96,20 @@ section{
 #Lista_ruta ul li a span{
     color: #0095D9;
 }
+#Lista_Menu_Cliente ul li a h2{
+    color: gray;
+}
+#DetalleCliente{
+    color: gray;
+}
+#DetalleCliente figure img{
+    width: 25%;
+}
+#DetalleCliente figure{
+    margin: 0;
+    text-align: center;
+}
+
 .ui-listview {
     margin: 0.8em 0;
 }
@@ -103,4 +119,8 @@ section{
 .ui-li-heading {
 
 margin: 0.2em 0 0.6em 0;
+}
+.ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li {
+padding: .5em 8em;
+display: block;
 }
