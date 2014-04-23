@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Ruta</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css">
+
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.3.1.min.js"></script>
+	<script type="text/javascript" src="cordova-2.4.0.js"></script>
+	
+</head>
+<body>
+	<section id="SectionRuta">
+		<header>
+			<a href="index.html" rel="external">
+			<figure id="logo_ruta">				
+				<img src="img/Iconos Blancos/logo evolution blanco.png" alt="ruta">	
+			</figure>
+			</a>
+			<h1>Ruta del día (<span id="Dia_ruta">Lunes</span>)</h1>
+		</header>
+		<nav>
+			<div class="flechas_izq">
+				<a href="#" id="Next_ruta">
+					<figure>
+						<img src="img/Iconos Blancos/flecha_izq.png" alt="">
+					</figure>
+				</a>
+			</div>
+			<div class="Link_Mapa">
+				<a href="#" id="Mapa_ruta">
+					<figure class="Mapa_Icono">
+						<img src="img/Iconos Blancos/Ruta Blanco.png" alt="">
+					</figure>
+				</a>
+			</div>
+			<div class="flechas_der">
+				<a href="#" id="Next_ruta">
+					<figure>
+						<img src="img/Iconos Blancos/flecha_der.png" alt="">
+					</figure>
+				</a>
+			</div>
+		</nav>
+		<section id="Lista_ruta">
+			<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Buscar productos...">
+			    <li>
+			    	<a href="Menu_Cliente.html" rel="external">
+				        <img src="img/clientes/Giam_Chou-Zen.jpg">
+				        <h2>Calle 56 32 54</h2>
+				        <p>Supermercados MercaUno</p>
+				        <p>Cabecera</p> 
+				        <p>6571234</p>
+				        <span class="ui-li-count">1</span>
+				    </a>
+			    </li>
+			    <li>
+			    	<a href="#">
+				        <img src="img/clientes/tendero.jpg">
+				        <h2>Calle 56 32 54</h2>
+				        <p>Supermercados MercaUno</p>
+				        <p>Cabecera</p> 
+				        <p>6571234</p>
+				        <span class="ui-li-count">2</span>
+				    </a>
+			    </li>
+			    <li>
+			    	<a href="#">
+				        <img src="img/clientes/tendero2.JPG">
+				        <h2>Calle 56 32 54</h2>
+				        <p>Supermercados MercaUno</p>
+				        <p>Cabecera</p> 
+				        <p>6571234</p>
+				        <span class="ui-li-count">3</span>
+				    </a>
+			    </li>
+			    
+			</ul>
+			<!--<article>
+				<figure>
+					<img src="img/clientes/Giam_Chou-Zen.jpg">
+				</figure>
+				<a href="#">
+					<h2 id="Direccion_ruta">Calle 56 32 64</h2>
+					<div class="Razonsocial_ruta">
+						<p>Supermercados MercaUno</p>
+					</div>
+					<div class="Barrio_ruta">
+						<p>Cabecera</p>
+					</div>
+					<div class="Telefono_ruta">
+						<p>6571234</p>
+					</div>
+					<div class="Turno_ruta">
+						<p>001</p>
+					</div>
+				</a>
+			</article>-->
+		</section>
+
+	</section>
+</body>
+</html>
