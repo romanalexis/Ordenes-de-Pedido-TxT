@@ -20,6 +20,7 @@ body{
 header{
     background: #0095D9;
     border-bottom: 1px solid white;
+    height: 53px;
     overflow: hidden;
 }
 header figure{
@@ -58,11 +59,14 @@ nav .flechas_der{
 }
 nav .filtros_icon_1{
     border-right: 1px solid white;
+<<<<<<< HEAD
     float: left;
     padding: 0 8%;
 }
 nav .filtros_icon_2{
     float: center;
+=======
+>>>>>>> a8f6bcb389395f1214a233aba20d08e111069b1f
     padding: 0 8%;
 }
 nav div{
@@ -100,6 +104,20 @@ section{
 #Lista_ruta ul li a span{
     color: #0095D9;
 }
+#Lista_Menu_Cliente ul li a h2{
+    color: gray;
+}
+#DetalleCliente{
+    color: gray;
+}
+#DetalleCliente figure img{
+    width: 25%;
+}
+#DetalleCliente figure{
+    margin: 0;
+    text-align: center;
+}
+
 .ui-listview {
     margin: 0.8em 0;
 }
@@ -107,6 +125,9 @@ section{
     display: none;
 }
 .ui-li-heading {
-
 margin: 0.2em 0 0.6em 0;
+}
+.ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li {
+padding: .5em 8em;
+display: block;
 }
