@@ -55,11 +55,11 @@ function queryDBRuta(tx) {
 function VectorRuta(tx, results){
     $('.clear').click(function()
     {
-        $("#Lista_Ruta").empty();
+        $("#Lista_Clientes_Ruta").empty();
     });
     for(var i=0; i < results.rows.length; i++) 
     {
-        $("#Lista_Ruta").append('<a onClick="mostrarCliente(' + results.rows.item(i).CCNit_Cliente +')" >' + 
+        $("#Lista_Clientes_Ruta").append('<a onClick="mostrarCliente(' + results.rows.item(i).CCNit_Cliente +')" >' + 
           	'<h4 class="list-group-item-heading">' + results.rows.item(i).CCAsesor + '</h4>' +
 		   	'<p class="list-group-item-text">' + results.rows.item(i).CCNit_Cliente +'</p>' +
 	    	'<span>' + results.rows.item(i).diaRuta + '</span>' +
