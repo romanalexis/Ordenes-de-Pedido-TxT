@@ -11,9 +11,14 @@
 	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="js/jquery.mobile-1.3.1.min.js"></script>
 	<script type="text/javascript" src="cordova-2.4.0.js"></script>
-	
+	<script type="text/javascript" src="js/main_Clientes.js"></script>
+	<style type="text/css">
+		header{
+			margin: 0 0 1em 0;
+		}
+	</style>
 </head>
-<body>
+<body onload="ObtenerCliente()">
 	<section id="SectionRuta">
 		<header>
 			<a href="index.html" rel="external">
@@ -23,85 +28,10 @@
 			</a>
 			<h1>Clientes</h1>
 		</header>
-		<nav>
-			<div class="flechas_izq">
-				<a href="#" id="Next_ruta">
-					<figure>
-						<img src="img/Iconos Blancos/flecha_izq.png" alt="">
-					</figure>
-				</a>
-			</div>
-			<div class="Link_Mapa">
-				<a href="#" id="Mapa_ruta">
-					<figure class="Mapa_Icono">
-						<img src="img/Iconos Blancos/Ruta Blanco.png" alt="">
-					</figure>
-				</a>
-			</div>
-			<div class="flechas_der">
-				<a href="#" id="Next_ruta">
-					<figure>
-						<img src="img/Iconos Blancos/flecha_der.png" alt="">
-					</figure>
-				</a>
-			</div>
-		</nav>
 		<section id="Lista_ruta">
-			<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Buscar productos...">
-			    <li>
-			    	<a href="Menu_Cliente.html" rel="external">
-				        <img src="img/clientes/Giam_Chou-Zen.jpg">
-				        <h2>Calle 56 32 54</h2>
-				        <p>Supermercados MercaUno</p>
-				        <p>Cabecera</p> 
-				        <p>6571234</p>
-				        <span class="ui-li-count">1</span>
-				    </a>
-			    </li>
-			    <li>
-			    	<a href="#">
-				        <img src="img/clientes/tendero.jpg">
-				        <h2>Calle 56 32 54</h2>
-				        <p>Supermercados MercaUno</p>
-				        <p>Cabecera</p> 
-				        <p>6571234</p>
-				        <span class="ui-li-count">2</span>
-				    </a>
-			    </li>
-			    <li>
-			    	<a href="#">
-				        <img src="img/clientes/tendero2.JPG">
-				        <h2>Calle 56 32 54</h2>
-				        <p>Supermercados MercaUno</p>
-				        <p>Cabecera</p> 
-				        <p>6571234</p>
-				        <span class="ui-li-count">3</span>
-				    </a>
-			    </li>
-			    
+			<ul id="Lista_Clientes" data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Buscar Clientes...">
 			</ul>
-			<!--<article>
-				<figure>
-					<img src="img/clientes/Giam_Chou-Zen.jpg">
-				</figure>
-				<a href="#">
-					<h2 id="Direccion_ruta">Calle 56 32 64</h2>
-					<div class="Razonsocial_ruta">
-						<p>Supermercados MercaUno</p>
-					</div>
-					<div class="Barrio_ruta">
-						<p>Cabecera</p>
-					</div>
-					<div class="Telefono_ruta">
-						<p>6571234</p>
-					</div>
-					<div class="Turno_ruta">
-						<p>001</p>
-					</div>
-				</a>
-			</article>-->
 		</section>
-
 	</section>
 </body>
 </html>

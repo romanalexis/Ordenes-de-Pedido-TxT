@@ -1,4 +1,4 @@
-var db = window.openDatabase("DBPedidosApp", "1.0", "Pedidos App", 5 * 1024); // Abre la base de datos
+var db = window.openDatabase("DBPedidosTAT", "1.0", "Pedidos App", 5 * 1024); // Abre la base de datos
 
 function main () {//Cuando carga el body carga esta función
 	document.addEventListener("deviceready", aplicacionIniciada, false);	
@@ -15,7 +15,7 @@ function CreaTablas(tx){
 	tx.executeSql('DROP TABLE IF EXISTS Productos');
 
 	/* Tabla Rutas */
-	tx.executeSql('CREATE TABLE IF NOT EXISTS Ruta(id_ruta INTEGER PRIMARY KEY autoincrement, CCAsesor VARCHAR(10), diaRuta INTEGER, ordenRuta INTEGER, CCNit_Cliente VARCHAR(15), Visitado INTEGER);');
+	tx.executeSql('CREATE TABLE IF NOT EXISTS Ruta(id_ruta INTEGER PRIMARY KEY autoincrement, CCAsesor VARCHAR(10), diaRuta INTEGER, ordenRuta INTEGER, CCNit_Cliente INTEGER, Visitado INTEGER);');
 	
 	tx.executeSql('INSERT INTO Ruta (id_ruta, CCAsesor, diaRuta, ordenRuta, CCNit_Cliente, Visitado) values (1, 1, 6, 1, 604001209, 0)');
     tx.executeSql('INSERT INTO Ruta (id_ruta, CCAsesor, diaRuta, ordenRuta, CCNit_Cliente, Visitado) values (2, 1, 6, 2, 604001301, 0)');
@@ -24,7 +24,7 @@ function CreaTablas(tx){
 	tx.executeSql('CREATE TABLE IF NOT EXISTS Clientes(id_cliente INTEGER PRIMARY KEY, CCNit INTEGER, TipoJuridico VARCHAR(30), Regimen VARCHAR(20), RazonSocial VARCHAR(150), NombreComercial VARCHAR(150), Direccion VARCHAR(150), Ciudad VARCHAR(50), Zona VARCHAR(50), Barrio VARCHAR(50), Telefono1 VARCHAR(50), Telefono2 VARCHAR(50), Celular VARCHAR(50), Email VARCHAR(70), Latitud DOUBLE, Longitud DOUBLE, NombreListaP VARCHAR(30), Descuento DOUBLE, Retefuente DOUBLE, ReteIVA DOUBLE, ReteICA DOUBLE, ReteCREE DOUBLE, FormaPago VARCHAR(20), Cupo INTEGER, Plazo INTEGER, V1 bit, V2 bit, V3 bit, V4 bit, V5 bit, V6 bit, V7 bit, url VARCHAR(200));');
 
 	tx.executeSql('INSERT INTO Clientes (id_cliente, CCNit, TipoJuridico, Regimen, RazonSocial, NombreComercial, Direccion, Ciudad, Zona, Barrio, Telefono1, Telefono2, Celular, Email, Latitud, Longitud, NombreListaP, Descuento, Retefuente, ReteIVA, ReteICA, ReteCREE, FormaPago, Cupo, Plazo, V1, V2, V3, V4, V5, V6, V7, url) values (1615, 604001209, \'Persona natural\', \'Común\', \'RESTAURANTE CHOU YANG\', \'RESTAURANTE CHOU YANG\', \'CRA. 26A # 30 - 36\', \'Bucaramanga\', \'Cañaveral\', \'Cañaveral\', \'6390666\', \'\', \'3142245667\', \'demo@mail.com\', 0, 0, \'Tendero\', 5, 3.5, 8.0, 1.50, 0.12, \'Credito\', 20000000, 30, 1, 1, 1, 1, 1, 1, 1, \'img/clientes/Giam_Chou-Zen.jpg\');');
-    tx.executeSql('INSERT INTO Clientes (id_cliente, CCNit, TipoJuridico, Regimen, RazonSocial, NombreComercial, Direccion, Ciudad, Zona, Barrio, Telefono1, Telefono2, Celular, Email, Latitud, Longitud, NombreListaP, Descuento, Retefuente, ReteIVA, ReteICA, ReteCREE, FormaPago, Cupo, Plazo, V1, V2, V3, V4, V5, V6, V7, url) values (1614, 604001301, \'Persona juridica\', \'simplificado\', \'Mercatodo\', \'Mercatodo\', \'CRA. 3 A # 40 - 18\', \'Bucaramanga\', \'La Joya\', \'\', \'6704475\', \'\', \'\', \'\', 0, 0, \'Tendero\', 2, 1.4, 3.6, 1.3, 0.13, \'\', 0, 0, 1, 1, 1, 1, 1, 1, 1, \'img/clientes/logo-mercatodo.png\');');
+    tx.executeSql('INSERT INTO Clientes (id_cliente, CCNit, TipoJuridico, Regimen, RazonSocial, NombreComercial, Direccion, Ciudad, Zona, Barrio, Telefono1, Telefono2, Celular, Email, Latitud, Longitud, NombreListaP, Descuento, Retefuente, ReteIVA, ReteICA, ReteCREE, FormaPago, Cupo, Plazo, V1, V2, V3, V4, V5, V6, V7, url) values (1614, 604001301, \'Persona juridica\', \'simplificado\', \'Mercatodo\', \'Mercatodo\', \'CRA. 3 A # 40 - 18\', \'Bucaramanga\', \'La Joya\', \'La Joya\', \'6704475\', \'\', \'3168930243\', \'demo@mail.com\', 0, 0, \'Tendero\', 2, 1.4, 3.6, 1.3, 0.13, \'\', 0, 0, 1, 1, 1, 1, 1, 1, 1, \'img/clientes/tendero2.JPG\');');
     tx.executeSql('INSERT INTO Clientes (id_cliente, CCNit, TipoJuridico, Regimen, RazonSocial, NombreComercial, Direccion, Ciudad, Zona, Barrio, Telefono1, Telefono2, Celular, Email, Latitud, Longitud, NombreListaP, Descuento, Retefuente, ReteIVA, ReteICA, ReteCREE, FormaPago, Cupo, Plazo, V1, V2, V3, V4, V5, V6, V7, url) values (1613, 604001302, \'Persona natural\', \'Común\', \'Don Luis\', \'Luis Serrano\', \'Cll. 25 # 18 - 18\', \'Bucaramanga\', \'San Francisco\', \'San Francisco\', \'6704475\', \'\', \'3056738291\', \'pimp@pimp.com\', 0, 0, \'Tendero\', 10, 2.3, 1.5, 0.13, 3.5, \'Credito\', 500000, 45, 1, 1, 1, 1, 1, 0, 0, \'img/clientes/tendero.jpg\');');
 	
     /* Tabla Productos */
@@ -582,7 +582,3 @@ function MostrarDetallePedidoRecuperado (tx, results) {
             $("#listaProductosFacturaMPedido").append('<tr> <th>' + results.rows.item(i).Descripcion + '</th> <td>' + results.rows.item(i).CantUnidadEmpaque + ' x ' + results.rows.item(i).UnidEmpaque + '</th> <td> $' + Math.round(results.rows.item(i).Total) + '<td> </tr>');     
         }
 }
-
-    
-    
-    

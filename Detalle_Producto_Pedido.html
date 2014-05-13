@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Detalle Producto</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css">
+
+
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.3.1.min.js"></script>
+	<script type="text/javascript" src="cordova-2.4.0.js"></script>
+	<script type="text/javascript" src="js/main_Detalle_Producto_Pedido.js"></script>
+	
+</head>
+<body onload="cargarProducto()">
+	<section id="Producto_Pedido">
+		<header>
+			<a data-rel="back" href="#" rel="external">
+			<figure id="logo_ruta">				
+				<img src="img/Iconos Blancos/Pedidos Gris.png" alt="Cliente">	
+			</figure>
+			</a>
+			<h1 id="">Detalle Pedido</h1>
+		</header>
+		<section id="Pedido_item">
+			<figure id="DetallePedidoimagen">				
+				
+			</figure>
+			<h2 id="detalleProdDescripcion">Detalle Pedido</h2>
+		</section>
+		<section id="Pedido_item_Det">
+			<table  class="table table-bordered table-condensed table-hover table-striped">
+			    <tbody>
+			       	<tr>
+			        	<th>Unidad de Medida</th>
+			         	<td id="ClienteDetalle_NombreListaP"> 
+			         		<select id="UnidadesMedida" onChange="calcularUnidadMedida()">
+			         			
+							</select>
+			         	</td>
+			       	</tr>
+			       	<tr>
+			         <th>Cantidad</th>
+			         <td> 
+			         	<input onChange="calcularCantidad()" type="number" name="DetallePedidocantidad" id="DetallePedidocantidad" value="1" placeholder="0"> 
+			         </td>
+			       	</tr>
+			       	<tr>
+				        <th>Precio Unidad</th>
+				        <td id="DetallePedidoprecioUnidad"> </td>
+			       	</tr>
+			       	<tr>
+			         	<th>Subtotal</th>
+			         	<td id="DetallePedidoprecio">  </td>
+			       	</tr>
+			       	<tr>
+			         	<th>Base</th>
+			         	<td id="DetallePedidoBase">  </td>
+			       	</tr>
+			       	<tr>
+			         	<th>Dcto Cliente <span id="DetallePedidoDctoCliente"></span></th>
+			         	<td id="DetallePedidoDctoC">  </td>
+			       	</tr>
+			       	<tr>
+			         	<th>Dcto Promo <span id="DetallePedidoDctoPromo"></span></th>
+			         	<td id="DetallePedidoDctoP">  </td>
+			       	</tr>
+			       	<tr>
+			         	<th>Valor Base Final</th>
+			         	<td id="DetallePedidoSubIVA">  </td>
+			       	</tr>
+			       	<tr>
+			        	<th>IVA</th>
+			         	<td id="DetallePedidoIVA">  </td>
+			       	</tr>
+			       	<tr>
+			         	<th>Total</th>
+			         	<td id="DetallePedidoTotal">  </td>
+			       	</tr>
+			    </tbody>
+			</table>
+		</section>
+		<section id="Botones">
+			<div id="aceptar">
+				<a href="" onClick="AceptarProducto()">Aceptar</a>
+			</div>
+			<div id="cancelar">
+				<a href="">Cancelar</a>
+			</div>
+		</section>
+	</section>
+</body>
+</html>

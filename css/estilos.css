@@ -44,6 +44,31 @@ nav{
     overflow: hidden;
     text-align: center;
 }
+#Botones{
+    background: #0095D9;
+    text-align: center;
+}
+#Botones a{
+    background: #0095D9;
+    color: white;
+    font-weight: normal;
+}
+#Botones div{
+    display: inline-block;
+    height: 100%;
+    padding: 0;
+}
+#Botones #aceptar{ 
+float: left;  
+    border-right: 1px solid white;
+    padding: 1em 18%;
+}
+
+#Botones #cancelar{  
+     
+    padding: 1em 15%;
+    text-align: center;
+}
 nav .flechas_izq{
     border-right: 1px solid white;
     float: left;
@@ -59,14 +84,11 @@ nav .flechas_der{
 }
 nav .filtros_icon_1{
     border-right: 1px solid white;
-<<<<<<< HEAD
     float: left;
     padding: 0 8%;
 }
 nav .filtros_icon_2{
     float: center;
-=======
->>>>>>> a8f6bcb389395f1214a233aba20d08e111069b1f
     padding: 0 8%;
 }
 nav div{
@@ -98,12 +120,28 @@ section{
 #Lista_ruta ul li a h2{
     color: #0095D9;
 }
+#Lista_Pedidos li a h2{
+    color: #0095D9;
+}
 #Lista_ruta ul li a p{
     color: gray;
 }
 #Lista_ruta ul li a span{
     color: #0095D9;
 }
+#Lista_Pedido{
+    margin: 0;
+}
+#Lista_Pedidos li a h2{
+    color: #0095D9;
+}
+#Lista_Pedido ul li a p{
+    color: gray;
+}
+#Lista_Pedido ul li a span{
+    color: #0095D9;
+}
+
 #Lista_Menu_Cliente ul li a h2{
     color: gray;
 }
@@ -118,6 +156,28 @@ section{
     text-align: center;
 }
 
+#Pedido_item{
+    overflow: hidden;
+}
+
+#Pedido_item figure{
+    float: left;
+    margin: 0 1em 0 0;
+    padding: 0 1.5em 0.6em;
+}
+#Pedido_item figure img{
+    width: 80px;
+}
+
+#Pedido_item h2{
+    color: #0095D9;
+}
+
+#Pedido_item_Det{
+    color: gray;
+    padding: 10px 15px;
+}
+
 .ui-listview {
     margin: 0.8em 0;
 }
@@ -130,4 +190,46 @@ margin: 0.2em 0 0.6em 0;
 .ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li {
 padding: .5em 8em;
 display: block;
+}
+#tendero{
+    width: 110px;
+    height: 130px;
+}
+ul p
+{
+    margin: 5px;
+}
+.productlist{
+    width: 60px;
+    height: 80px;
+    float: left;
+    margin-right: 10px;
+}
+
+.imgfact{
+    width: 50px;
+    height: 50px;
+}
+
+.detallePro{
+    width: 90px;
+    height: 90px;
+}
+.icon{margin:5px; 
+    color: black;
+    float: center;
+    }
+.icon a{
+    text-align: center;
+    display:block; 
+    float:left; 
+    height:92px !important; 
+    height:920px; width:90px !important;
+    width: 100px; 
+    vertical-align:middle;
+    text-decoration:none;  
+    padding:0; 
+    }
+.icon img{
+    width: 50%;
 }

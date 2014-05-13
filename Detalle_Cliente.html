@@ -13,23 +13,24 @@
 	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="js/jquery.mobile-1.3.1.min.js"></script>
 	<script type="text/javascript" src="cordova-2.4.0.js"></script>
+	<script type="text/javascript" src="js/main_Clientes.js"></script>
 	
 </head>
-<body>
+<body onload="mostrarDatosCliente()">
 	<section id="SectionRuta">
 		<header>
-			<a href="Menu_Cliente.html" rel="external">
+			<a data-rel="back" href="#" rel="external">
 			<figure id="logo_ruta">				
 				<img src="img/Iconos Blancos/Clientes Blanco.png" alt="Cliente">	
 			</figure>
 			</a>
-			<h1>Supermercado MercaUno</h1>
+			<h1 id="Cliente_Name2"></h1>
 		</header>
 
 		<section id="DetalleCliente">
 			<article>
-				<figure>
-					<img src="img/clientes/Giam_Chou-Zen.jpg" alt="">
+				<figure id="imagen_Cliente">
+					
 				</figure>
 			</article>
 			<article>
@@ -39,31 +40,31 @@
 						     <tbody>
 						       <tr>
 						         <th>Razón Social</th>
-						         <td> Supermercado MercaUno </td>
+						         <td id="ClienteDetalle_RSocial">  </td>
 						       </tr>
 						       <tr>
 						         <th>Dirección</th>
-						         <td> Calle 56 32 67 </td>
+						         <td id="ClienteDetalle_Dir">  </td>
 						       </tr>
 						       <tr>
 						         <th>Ciudad</th>
-						         <td> Bucaramanga </td>
+						         <td id="ClienteDetalle_Ciudad">  </td>
 						       </tr>
 						       <tr>
 						         <th> Zona </th>
-						         <td> Oriente </td>
+						         <td id="ClienteDetalle_Zona">  </td>
 						       </tr>
 						       <tr>
 						         <th> Barrio </th>
-						         <td> Antiguo Campestre </td>
+						         <td id="ClienteDetalle_Barrio"> </td>
 						       </tr>
 						       <tr>
 						         <th>Teléfonos</th>
-						         <td> 3564321 - 3116789087 </td>
+						         <td id="ClienteDetalle_Cel">  <span id="ClienteDetalle_Tel1"></span> </td>
 						       </tr>
 						       <tr>
 						         <th>Correo</th>
-						         <td> mercauno@hotmail.com </td>
+						         <td id="ClienteDetalle_Mail">  </td>
 						       </tr>
 						     </tbody>
 						</table>
@@ -75,56 +76,52 @@
 	                <table  class="table table-bordered table-condensed table-hover table-striped">
 					     <tbody>
 					       <tr>
-					         <th>Días Visita</th>
-					         <td> Lun, Mar, Jue </td>
-					       </tr>
-					       <tr>
 					         <th>Lista Precios</th>
-					         <td> Tendero </td>
+					         <td id="ClienteDetalle_NombreListaP">  </td>
 					       </tr>
 					       <tr>
 					         <th>Descuento</th>
-					         <td> 5,00 </td>
+					         <td id="ClienteDetalle_Descuento">  </td>
 					       </tr>
 					       <tr>
 					         <th>Forma Pago</th>
-					         <td> Credito </td>
+					         <td id="ClienteDetalle_FormaPago">  </td>
 					       </tr>
 					       <tr>
 					         <th>Cupo</th>
-					         <td> $20.000.000 </td>
+					         <td id="ClienteDetalle_Cupo">  </td>
 					       </tr>
 					       <tr>
 					         <th>Plazo (Dias)</th>
-					         <td> $30 </td>
+					         <td id="ClienteDetalle_Plazo">  </td>
 					       </tr>
 					       <tr>
 					         <th>Nit</th>
-					         <td> 804011187 </td>
+					         <td id="ClienteDetalle_CCNit">  </td>
 					       </tr>
 					       <tr>
 					         <th>Tipo Juridico</th>
-					         <td> Persona Natural </td>
+					         <td id="ClienteDetalle_TipoJuridico">  </td>
 					       </tr>
 					       <tr>
 					         <th>Regimen</th>
-					         <td> Común </td>
+					         <td id="ClienteDetalle_Regimen">  </td>
 					       </tr>
 					       <tr>
 					         <th>Retefuente</th>
-					         <td> 3,50% </td>
+					         <td id="ClienteDetalle_Retefuente">  </td>
 					       </tr>
 					       <tr>
 					         <th>ReteIVA</th>
-					         <td> 8,00% </td>
+					         <td id="ClienteDetalle_ReteIVA">  </td>
 					       </tr>
 					       <tr>
 					         <th>ReteICA</th>
-					         <td> 1,50% </td>
+					         <td id="ClienteDetalle_ReteICA">  </td>
 					       </tr>
 					       <tr>
 					         <th>Retecre</th>
-					         <td> 0,12% </td>
+					         <td id="ClienteDetalle_ReteCREE">  </td>
 					       </tr>
 					     </tbody>
 					</table>

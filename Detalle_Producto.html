@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Detalle Producto</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css">
+
+
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.3.1.min.js"></script>
+	<script type="text/javascript" src="cordova-2.4.0.js"></script>
+	<script type="text/javascript" src="js/main_Detalle_Producto.js"></script>
+	
+</head>
+<body onload="ObtenerDatosProducto()">
+	<section id="SectionRuta">
+		<header>
+			<a data-rel="back" href="#" rel="external">
+			<figure id="logo_ruta">				
+				<img src="img/Iconos Blancos/Productos Blanco.png" alt="Cliente">	
+			</figure>
+			</a>
+			<h1 id="Producto_Name"></h1>
+		</header>
+
+		<section id="DetalleCliente">
+			<article>
+				<figure id="imagen_Producto">
+					
+				</figure>
+			</article>
+			<article>
+				<div data-role="collapsible" data-mini="true" data-collapsed="false">          
+                    <table  class="table table-bordered table-condensed table-hover table-striped">
+					     <tbody id="Detalle_Producto">
+					     	<tr>
+					         <th>Marca</th>
+					         <td id="DetalleProdcutoMarca"></td>
+					       </tr>
+					       <tr>
+					         <th>Codigo / PLU</th>
+					         <td id="DetalleProdcutoCodigo"></td>
+					       </tr>
+					       <tr>
+					         <th>Cod Barras</th>
+					         <td id="DetalleProdcutoCodBarras"></td>
+					       </tr>
+					       <tr>
+					         <th>Referencia</th>
+					         <td id="DetalleProdcutoReferencia"></td>
+					       </tr>
+					       <tr>
+					         <th>IVA</th>
+					         <td id="DetalleProdcutoIVA"></td>
+					       </tr>
+					       <tr>
+					         <th>Descuento Promo</th>
+					         <td id="DetalleProdcutoDctoPromo"></td>
+					       </tr>
+					       <tr>
+					         <th>Descuento Expira</th>
+					         <td id="DetalleProdcutoDctoExp"></td>
+					       </tr>
+					     </tbody>
+					</table>
+                </div>
+			</article>
+			<article>
+				<div data-role="collapsible" data-mini="true"data-collapsed="true">               
+	                <h3>Lista de Precios </h3>
+						<table  class="table table-bordered table-condensed table-hover table-striped">
+						     <tbody id="Lista_Precios">
+						     	<tr>
+						         <th>PVP</th>
+						         <td id="DetalleProductoPVP"></td>
+						       </tr>
+						       <tr>
+						         <th>Tendero</th>
+						         <td id="DetalleProductoTendero"></td>
+						       </tr>
+						       <tr>
+						         <th>Distribuidor</th>
+						         <td id="DetalleProductoDistri"></td>
+						       </tr>
+						     </tbody>
+						</table>
+						<h4>Unidades de Medida</h4>
+						<table  class="table table-bordered table-condensed table-hover table-striped">
+                    		<thead>
+							    <tr>
+							        <th>UM</th>
+							        <th>Factor</th>
+							        <th>Existencia</th>
+							        <th>Precio</th>
+							    </tr>
+							</thead>
+						     <tbody id="Unidad_Medida">
+						       <tr>
+						         <th id="DetalleUM1"></th>
+						         <td id="DetalleUM1Factor"> </td>
+						         <td id="DetalleExistencia1"> </td>
+						         <td id="DetallePrecio1"> </td>
+						       </tr>
+						       <tr>
+						         <th id="DetalleUM2"></th>
+						         <td id="DetalleUM2Factor"> </td>
+						         <td id="DetalleExistencia2"> </td>
+						         <td id="DetallePrecio2"> </td>
+						       </tr>
+						       <tr>
+						         <th id="DetalleUM3"></th>
+						         <td id="DetalleUM3Factor"> </td>
+						         <td id="DetalleExistencia3"> </td>
+						         <td id="DetallePrecio3"> </td>
+						       </tr>
+						     </tbody>
+						</table>
+	            </div>
+			</article>
+	</section>
+</body>
+</html>
